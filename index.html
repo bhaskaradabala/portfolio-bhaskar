@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d022f1fe02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <a href="#"><img src="assests/dp.jpg" class="logo"></a> -->
+                <h3>Bhaskar</h3>
+                
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="assests/Resume_ABSPrakash.pdf" target=”_blank”>Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick ="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hello, I'm <span>Bhaskar</span></h1>
+                <p>
+                    a frontend developer.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <main class="main-flex">
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <h1 class="sub-title">About <span>Me</span></h1>
+                        <img src="assests/aboutme.jpg" class="aboutme-pic">
+                    </div>
+                    <div class="about-col-2">
+                        
+                        <p style="padding-top: 20px; text-align: justify;">
+                        An optimistic individual who sees challenges as opportunities and strives for excellence. Seeking an entry-level opportunity within an esteemed organization to present and utilize my skills to enhance my learning in the field of work. Capable of mastering new technologies.
+                        </p>
+                        <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul class="myskills-list">
+                            <li class="myskills">Java</li>
+                            <li class="myskills">Python</li>
+                            <li class="myskills">SQL</li>
+                            <li class="myskills">MongoDB</li>
+                            <li class="myskills">HTML/CSS</li>
+                            <li class="myskills">Javascript</li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <div class="education-row">
+                            <div class="education-column">
+                                <div class="education-box">
+                                    <div class="education-content">
+                                        <div class="content">
+                                            <div class="year">2020-2024 <span> SASTRA University</span></div>
+                                            <p>B.Tech-Electronics & Communication Engineering specialisation in Cyber Physical Systems.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education-content">
+                                        <div class="content">
+                                            <div class="year">2018-2020 <span>Tirumala Junior Kalasala</span></div>
+                                            <p>Board of Intermediate Education AP<br>
+                                            Score: 975/1000
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="education-content">
+                                        <div class="content">
+                                            <div class="year">2020-2024 <span>Sri Prakash Vidya Niketan</span></div>
+    
+                                            <p>Board of Secondary Education (CBSE)<br>
+                                            Score: 431/500
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section  id="projects">
+            <div class="container">
+                <h1 class="sub-title">My <span>Projects</span></h1>
+                <div class="section-content">
+                    
+                    
+                    <div class="projects-list project">
+                        <div class="projects-content">
+                            <div class="project-container">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-codepen"></i>
+                                    <h2 class="project-header">Movie review web application </h2>
+                                </div>
+                                <p class="project-text">using MongoDB for database, Java and Spring Boot for the backend and React for the frontend.</p>
+                                <a class="project-button" href="#"> <div>learn more</div></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="projects-list project">
+                        <div class="projects-content">
+                            <div class="project-container">
+                                <div class="icon-container">
+                                <i class="fa-brands fa-codepen"></i>
+                                <h2 class="project-header">Instinctive engine locking safety system in vehicles</h2>
+                                </div>
+                                <p class="project-text">using various components including MQ-3 sensor, IC L298, Arduino UNO</p>
+                                <a class="project-button" href="https://drive.google.com/drive/folders/1F32CKogNv_X9IN2ANVZ8KxMvrwNQT8ll?usp=drive_link" target=”_blank”> <div>learn more</div></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="projects-list project">
+                        <div class="projects-content">
+                            <div class="project-container">
+                                <div class="icon-container">
+                                    <i class="fa-brands fa-codepen"></i>
+                                    <h2 class="project-header">Personal Portfolio (version 1)</h2>
+                                </div>
+                                
+                                <p class="project-text">using HTML, CSS, JS</p>
+                                <a class="project-button" href="#"> <div>github</div></a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="projects-list project">
+                        <div class="projects-content">
+                            <div class="project-container">
+                                <div class="icon-container">
+                                <i class="fa-brands fa-codepen"></i>
+                                <h2 class="project-header">Functional analysis of VANET based on AODV and DSDV protocols</h2>
+                                </div>
+                                <p class="project-text">using SUMO and NS2</p>
+                                <a class="project-button" href="https://github.com/bhaskaradabala/VANET-BASED-ON-AODV-AND-DSDV-PROTOCOLS-USING-SUMO-AND-NS2" target=”_blank”> <div>learn more</div></a>
+                            </div>
+                        </div>
+                    </div> 
+        
+                 </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <section id="contact">
+        <div class="container contact-container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    
+                    <p><i class="fa-solid fa-envelope"></i>bhaskaradabala06@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bhaskar-adabala-aa683b220/" target=”_blank”><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bhaskaradabala" target=”_blank”><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/bhaskar_adabala/" target=”_blank”><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        
+                        
+                    </div>
+                    <a href="assests/Resume_ABSPrakash.pdf" download class="btn btn-2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet" onsubmit="submitForm(event)">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <div id="confirmation-message" style="display: none;">
+                           Thanks for your response &#58;&#41;
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <div class="footer-content"></div>
+            <p>© 2024 Bhaskar Adabala.<br>
+               <span>Made with passion and coffee.</span></p>
+            <div class="footer-iconTop">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+
+    </main>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        
+        function opentab(tabname){
+         for(tablink of tablinks){
+             tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+ 
+        }
+     </script>
+ 
+     <script>
+ 
+         var sidemenu = document.getElementById("sidemenu");
+ 
+         function openmenu(){
+             sidemenu.style.right = "0";
+         }
+ 
+         function closemenu(){
+             sidemenu.style.right = "-200px";
+         }
+     </script>
+     <script src="js.js" type="text/javascript"></script>
+     
+ </body>
+ </html>
